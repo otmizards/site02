@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { SITE } from "../config/site.js";
+
+const title = `Como funciona um casino online — ${SITE.name ?? SITE.siteName}`;
+const description = "Guia simples: tipos de jogos, saldo real vs promocional e noções básicas para começar com clareza.";
+const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl;
+---
+
+<BaseLayout title={title} description={description} canonicalPath="/como-funciona-casino-online">
+  <main class="container" style="padding: 32px 0;">
+    <h1>Como funciona um casino online</h1>
+    <p>
+      Um casino online reúne jogos (slots, roleta, jogos de cartas e outros) com regras próprias. O ponto mais importante
+      para quem está a começar é perceber como o saldo funciona e quais condições se aplicam a ofertas.
+    </p>
+
+    <h2>O essencial</h2>
+    <ul>
+      <li><strong>Jogos</strong>: slots, roleta, cartas e variantes.</li>
+      <li><strong>Saldo real</strong>: dinheiro depositado.</li>
+      <li><strong>Saldo promocional</strong>: bónus/rodadas grátis com regras próprias.</li>
+      <li><strong>Condições</strong>: prazos, limites e requisitos de apostas (wagering).</li>
+    </ul>
+
+    <p style="margin-top:24px;">
+      <a class="btn btn-primary" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+        Entrar no Telegram para atualizações
+      </a>
+    </p>
+
+    <p style="margin-top:20px;">
+      Próximo guia: <a href="/boas-praticas">Boas práticas e erros a evitar</a> ·
+      <a href="/">Voltar à homepage</a>
+    </p>
+  </main>
+</BaseLayout>

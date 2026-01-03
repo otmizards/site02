@@ -1,0 +1,34 @@
+---
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title = "Como ler condições";
+const description = "Como interpretar exigido, prazos, jogos elegíveis e limites sem confusão.";
+---
+
+<GuideLayout
+  title={title}
+  description={description}
+  canonicalPath="/como-ler-condicoes"
+  checklistTitle="Condições em 60 segundos"
+  checklistItems={[
+    "Procura: exigido (wager) e como é calculado",
+    "Verifica: prazo de cumprimento",
+    "Confirma: jogos elegíveis / contribuições",
+    "Vê: limites de aposta e levantamentos",
+  ]}
+>
+  <h2>Exigido (wager): o que significa</h2>
+  <p>O exigido define quantas vezes precisas de cumprir um requisito antes de levantar, dependendo da oferta.</p>
+
+  <h2>Prazos e limites</h2>
+  <ul>
+    <li>Prazos: quando expira o bónus/rodadas.</li>
+    <li>Limites: aposta máxima, ganho máximo, limites de levantamento.</li>
+  </ul>
+
+  <h2>Jogos elegíveis</h2>
+  <p>Nem todos os jogos contam da mesma forma. Confirma sempre a lista/percentagens.</p>
+
+  <h2>Próximo passo</h2>
+  <p>Segue para <a href="/gestao-de-limites">Gestão de limites</a> para manter decisões consistentes.</p>
+</GuideLayout>

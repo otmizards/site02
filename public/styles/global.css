@@ -626,107 +626,52 @@ a{ color: inherit; text-decoration: none; }
   width: 18px !important;
   height: 18px !important;
 }
-
-/* ===== Site02: Fix de legibilidade (guide pages) ===== */
+/* === FIX TITULO PAGINAS DE GUIA === */
+.content-page h1,
+.guide-layout h1 {
+  color: #f5d58c; /* dourado legível */
+  text-shadow: 0 2px 12px rgba(0,0,0,0.7);
+}
+/* Guide pages: texto todo branco (exceto H1 dourado) */
 .guide-layout {
-  color: rgba(255, 255, 255, 0.92);
+  color: #ffffff;
 }
 
 .guide-layout p,
 .guide-layout li,
-.guide-layout dd,
-.guide-layout dt,
-.guide-layout blockquote,
-.guide-layout figcaption,
+.guide-layout span,
 .guide-layout small,
-.guide-layout summary,
-.guide-layout details p,
-.guide-layout .note {
-  color: rgba(255, 255, 255, 0.88);
+.guide-layout strong,
+.guide-layout em,
+.guide-layout blockquote,
+.guide-layout .lead,
+.guide-layout .kicker,
+.guide-layout .note,
+.guide-layout .guide-meta,
+.guide-layout .toc,
+.guide-layout .toc * {
+  color: #ffffff;
 }
 
-.guide-layout strong {
-  color: rgba(255, 255, 255, 0.96);
-}
-
-/* Headings (mantém H1 dourado, restantes brancos) */
+/* Mantém headings conforme regra do projeto */
 .guide-layout h1 {
-  color: #d6b15a; /* dourado */
+  /* mantém o teu dourado atual */
+  color: var(--gold, #d4af37);
 }
 
 .guide-layout h2,
 .guide-layout h3,
 .guide-layout h4 {
-  color: rgba(255, 255, 255, 0.98);
+  color: #ffffff;
 }
 
-/* Links legíveis */
+/* Links legíveis no tema escuro */
 .guide-layout a {
-  color: rgba(214, 177, 90, 0.95);
+  color: #ffffff;
   text-decoration: underline;
-  text-underline-offset: 3px;
 }
+
 .guide-layout a:hover {
-  color: rgba(214, 177, 90, 1);
+  opacity: 0.9;
 }
 
-/* TOC legível */
-.guide-layout .toc,
-.guide-layout .toc * {
-  color: rgba(255, 255, 255, 0.92);
-}
-.guide-layout .toc a {
-  color: rgba(214, 177, 90, 0.95);
-}
-
-/* FAQ / details legível (home e guias) */
-.faq-mock,
-.faq-mock * {
-  color: rgba(255, 255, 255, 0.90);
-}
-.faq-item summary {
-  color: rgba(255, 255, 255, 0.96);
-}
-.faq-item p {
-  color: rgba(255, 255, 255, 0.86);
-}
-/* ===== CTA box (igual padrão do site01) ===== */
-.cta-box {
-  margin-top: 28px;
-  padding: 18px 18px;
-  border-radius: 16px;
-  border: 1px solid rgba(214, 177, 90, 0.22);
-  background: rgba(0, 0, 0, 0.35);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-}
-
-.cta-box h3 {
-  margin: 0 0 8px 0;
-  color: rgba(255, 255, 255, 0.98);
-}
-
-.cta-box p {
-  margin: 0 0 14px 0;
-  color: rgba(255, 255, 255, 0.86);
-}
-
-/* Botão primary dentro do CTA */
-.btn.primary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid rgba(214, 177, 90, 0.30);
-  background: rgba(214, 177, 90, 0.14);
-  color: rgba(255, 255, 255, 0.96);
-  text-decoration: none;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-.btn.primary:hover {
-  background: rgba(214, 177, 90, 0.20);
-  border-color: rgba(214, 177, 90, 0.45);
-}

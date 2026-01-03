@@ -1,31 +1,171 @@
 ---
+import { SITE } from "../config/site.js";
 import GuideLayout from "../layouts/GuideLayout.astro";
 
-const title = "Gestão de Limites no Casino Online";
-const description = "Boas práticas para definir banca, limites e evitar decisões impulsivas.";
+const title =
+  "Gestão de limites no casino online: tempo, perdas e controlo | 360Wins Portugal";
+const description =
+  "Guia prático de gestão de limites no casino online: como definir limites de tempo, perda e sessões para manter controlo e evitar decisões impulsivas.";
 ---
 
 <GuideLayout title={title} description={description} canonicalPath="/gestao-de-limites">
-  <p>
-    A gestão de limites é essencial para manter decisões mais controladas no casino online.
-    Definir regras simples ajuda a evitar decisões emocionais.
-  </p>
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Guia prático</p>
+      <h1>Gestão de limites no casino online</h1>
+      <p class="lead">
+        Limites não servem para “impedir” jogar — servem para
+        <strong>evitar decisões impulsivas</strong>.
+        Este guia mostra como definir limites simples de tempo e perda
+        que realmente funcionam no dia a dia.
+      </p>
 
-  <h2>Definir banca</h2>
-  <p>
-    A banca é o valor que estás disposto a utilizar e que aceitas perder.
-    Deve ser definida antes de qualquer atividade.
-  </p>
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 7–9 min</span>
+      </div>
+    </header>
 
-  <h2>Limite diário</h2>
-  <p>
-    Um limite diário ajuda a saber quando parar, independentemente do resultado.
-    Respeitar esse limite é uma das boas práticas mais importantes.
-  </p>
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#porque-limites">Porque os limites falham</a></li>
+        <li><a href="#tipos-limites">Tipos de limites essenciais</a></li>
+        <li><a href="#limite-tempo">Limite de tempo por sessão</a></li>
+        <li><a href="#limite-perda">Limite de perda</a></li>
+        <li><a href="#frequencia">Frequência de sessões</a></li>
+        <li><a href="#erros">Erros comuns</a></li>
+        <li><a href="#rotina">Rotina simples de controlo</a></li>
+        <li><a href="#proximos-passos">Próximos passos no SITE02</a></li>
+      </ol>
+    </nav>
 
-  <h2>Evitar decisões impulsivas</h2>
-  <p>
-    Perseguir perdas ou tentar recuperar rapidamente costuma levar a más decisões.
-    O controlo é sempre mais importante do que o resultado imediato.
-  </p>
+    <section id="porque-limites">
+      <h2>Porque os limites falham</h2>
+      <p>
+        Muitos jogadores definem limites que nunca cumprem.
+        O problema não é a falta de disciplina — é a forma como os limites são definidos.
+      </p>
+      <ul>
+        <li>Limites demasiado complexos</li>
+        <li>Limites definidos durante a sessão</li>
+        <li>Limites “negociáveis”</li>
+      </ul>
+      <p>
+        Limites funcionam quando são <strong>simples</strong> e definidos
+        <strong>antes</strong> de começar a jogar.
+      </p>
+    </section>
+
+    <section id="tipos-limites">
+      <h2>Tipos de limites essenciais</h2>
+      <p>
+        Não precisas de muitos limites. Três são suficientes para a maioria:
+      </p>
+      <ul>
+        <li><strong>Tempo</strong> — quanto tempo jogas</li>
+        <li><strong>Perda</strong> — quanto estás disposto a perder</li>
+        <li><strong>Frequência</strong> — quantas vezes jogas</li>
+      </ul>
+      <p>
+        Definir estes três reduz drasticamente decisões impulsivas.
+      </p>
+    </section>
+
+    <section id="limite-tempo">
+      <h2>Limite de tempo por sessão</h2>
+      <p>
+        Sessões longas aumentam fadiga e diminuem autocontrolo.
+        Um limite de tempo é a primeira linha de defesa.
+      </p>
+      <ul>
+        <li>Recomendado: <strong>20–40 minutos</strong></li>
+        <li>Usa um temporizador externo (telemóvel)</li>
+        <li>Quando o tempo acaba, paras — mesmo que “esteja a correr bem”</li>
+      </ul>
+      <p>
+        Ganhar ou perder não deve alterar o tempo definido.
+      </p>
+    </section>
+
+    <section id="limite-perda">
+      <h2>Limite de perda</h2>
+      <p>
+        O limite de perda define quando a sessão termina, independentemente do motivo.
+        Deve ser um valor que aceitas perder sem impacto.
+      </p>
+      <ul>
+        <li>Define o valor antes da sessão</li>
+        <li>Não aumentes após perdas</li>
+        <li>Não “recuperes” noutra sessão no mesmo dia</li>
+      </ul>
+      <p>
+        Se sentes vontade de ultrapassar o limite, é sinal de parar
+        (ver <a href="/jogo-consciente">jogo consciente</a>).
+      </p>
+    </section>
+
+    <section id="frequencia">
+      <h2>Frequência de sessões</h2>
+      <p>
+        Jogar muitas vezes seguidas aumenta a probabilidade de decisões emocionais.
+        Limitar a frequência ajuda a manter distância.
+      </p>
+      <ul>
+        <li>Máximo recomendado: <strong>1 sessão por dia</strong></li>
+        <li>Dias sem jogar são parte do controlo</li>
+        <li>Evita “só mais uma sessão”</li>
+      </ul>
+    </section>
+
+    <section id="erros">
+      <h2>Erros comuns</h2>
+      <ul>
+        <li>Definir limites depois de começar</li>
+        <li>Mudar limites após uma sequência negativa</li>
+        <li>Ignorar o limite porque “está quase a virar”</li>
+        <li>Confundir limite com falta de confiança</li>
+      </ul>
+      <p>
+        Limites não são sinal de fraqueza — são ferramenta de controlo.
+      </p>
+    </section>
+
+    <section id="rotina">
+      <h2>Rotina simples de controlo</h2>
+      <ol>
+        <li>Define tempo máximo (ex.: 30 min)</li>
+        <li>Define perda máxima</li>
+        <li>Inicia sessão com temporizador</li>
+        <li>Ao atingir qualquer limite, fecha a plataforma</li>
+      </ol>
+      <p>
+        Esta rotina reduz significativamente comportamentos impulsivos.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos no SITE02</h2>
+      <ul>
+        <li><a href="/guia-iniciante">Guia para iniciantes</a></li>
+        <li><a href="/como-ler-condicoes">Como ler condições</a></li>
+        <li><a href="/riscos-e-variancia">Riscos e variância</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram publicamos novos guias e lembretes de boas práticas.
+        </p>
+        <a
+          class="btn primary"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          rel="nofollow noopener"
+          target="_blank"
+        >
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
 </GuideLayout>

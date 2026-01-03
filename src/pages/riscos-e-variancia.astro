@@ -1,0 +1,159 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Riscos e variância no casino online: o que esperar na prática | 360Wins Portugal";
+const description =
+  "Guia prático sobre riscos e variância no casino online: porque os resultados variam, sessões curtas vs longas e como reduzir decisões impulsivas.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/riscos-e-variancia">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Entender o risco</p>
+      <h1>Riscos e variância no casino online</h1>
+      <p class="lead">
+        No casino online, ganhar ou perder numa sessão curta diz pouco.
+        O que mais influencia a experiência é a <strong>variância</strong> —
+        a forma como ganhos e perdas se distribuem ao longo do tempo.
+        Este guia explica o que esperar na prática e como reduzir decisões erradas.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 7–10 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#o-que-e">O que é variância</a></li>
+        <li><a href="#na-pratica">Como a variância aparece na prática</a></li>
+        <li><a href="#curto-vs-longo">Sessões curtas vs longas</a></li>
+        <li><a href="#impacto">Impacto nas decisões</a></li>
+        <li><a href="#reduzir-risco">Como reduzir risco operacional</a></li>
+        <li><a href="#erros">Erros comuns</a></li>
+        <li><a href="#proximos-passos">Próximos passos no SITE02</a></li>
+      </ol>
+    </nav>
+
+    <section id="o-que-e">
+      <h2>O que é variância</h2>
+      <p>
+        Variância descreve a <strong>oscilação natural</strong> entre ganhos e perdas.
+        Mesmo jogos com regras fixas podem ter longos períodos negativos ou positivos
+        sem que isso indique qualquer padrão.
+      </p>
+      <ul>
+        <li>Períodos sem ganhos fazem parte do jogo</li>
+        <li>Ganhos pontuais não são garantia de repetição</li>
+        <li>Resultados variam mais no curto prazo</li>
+      </ul>
+      <p>
+        Entender variância ajuda a evitar interpretações erradas do que acontece numa sessão.
+      </p>
+    </section>
+
+    <section id="na-pratica">
+      <h2>Como a variância aparece na prática</h2>
+      <p>
+        Na prática, a variância pode manifestar-se de várias formas:
+      </p>
+      <ul>
+        <li>Sessões longas sem ganhos relevantes</li>
+        <li>Ganhos concentrados em poucos momentos</li>
+        <li>Alternância rápida entre ganhos e perdas</li>
+      </ul>
+      <p>
+        Estas oscilações são normais e independentes da vontade do jogador.
+      </p>
+    </section>
+
+    <section id="curto-vs-longo">
+      <h2>Sessões curtas vs longas</h2>
+      <p>
+        A maioria das decisões erradas acontece porque se tira conclusões
+        a partir de sessões curtas.
+      </p>
+      <ul>
+        <li><strong>Sessão curta:</strong> variância domina os resultados</li>
+        <li><strong>Sessão longa:</strong> oscilações tendem a equilibrar</li>
+      </ul>
+      <p>
+        Mesmo assim, sessões longas aumentam fadiga e risco de perda de controlo,
+        especialmente sem limites definidos.
+      </p>
+    </section>
+
+    <section id="impacto">
+      <h2>Impacto nas decisões</h2>
+      <p>
+        Quando a variância não é compreendida, surgem comportamentos comuns:
+      </p>
+      <ul>
+        <li>aumentar apostas após perdas</li>
+        <li>mudar de jogo constantemente</li>
+        <li>interpretar ganhos como “sinal”</li>
+      </ul>
+      <p>
+        Estes comportamentos aumentam risco e reduzem controlo.
+      </p>
+    </section>
+
+    <section id="reduzir-risco">
+      <h2>Como reduzir risco operacional</h2>
+      <p>
+        Não é possível eliminar a variância, mas é possível reduzir o impacto:
+      </p>
+      <ul>
+        <li>usar limites de tempo e perda (ver <a href="/gestao-de-limites">gestão de limites</a>)</li>
+        <li>manter sessões curtas</li>
+        <li>evitar decisões emocionais</li>
+        <li>aceitar que perdas fazem parte do processo</li>
+      </ul>
+      <p>
+        O objetivo é proteger decisões, não “vencer” a variância.
+      </p>
+    </section>
+
+    <section id="erros">
+      <h2>Erros comuns</h2>
+      <ul>
+        <li>achar que uma sequência negativa “vai virar”</li>
+        <li>confundir sorte com padrão</li>
+        <li>jogar mais tempo para compensar perdas</li>
+        <li>ignorar limites definidos</li>
+      </ul>
+      <p>
+        Se estes erros começam a repetir-se, é sinal para parar e rever controlo.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos no SITE02</h2>
+      <ul>
+        <li><a href="/guia-iniciante">Guia para iniciantes</a></li>
+        <li><a href="/como-ler-condicoes">Como ler condições</a></li>
+        <li><a href="/gestao-de-limites">Gestão de limites</a></li>
+        <li><a href="/jogo-consciente">Jogo consciente</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram partilhamos novos guias focados em decisões seguras e controlo.
+        </p>
+        <a
+          class="btn primary"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          rel="nofollow noopener"
+          target="_blank"
+        >
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

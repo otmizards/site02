@@ -1,35 +1,177 @@
 ---
+import { SITE } from "../config/site.js";
 import GuideLayout from "../layouts/GuideLayout.astro";
 
-const title = "Guia do Iniciante no Casino Online";
-const description = "Primeiros passos no casino online em Portugal para quem está a começar.";
+const title =
+  "Guia para iniciantes no casino online: como avaliar antes de jogar | 360Wins Portugal";
+const description =
+  "Guia prático para iniciantes no casino online em Portugal: o que analisar antes de jogar, erros comuns, leitura básica de regras e quando não jogar.";
 ---
 
 <GuideLayout title={title} description={description} canonicalPath="/guia-iniciante">
-  <p>
-    Este guia é para quem está a dar os primeiros passos no casino online em Portugal
-    e quer entender o básico antes de avançar.
-  </p>
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Guia prático</p>
+      <h1>Guia para iniciantes no casino online</h1>
+      <p class="lead">
+        Antes de jogar, o mais importante não é escolher o jogo certo — é
+        <strong>saber avaliar regras, riscos e limites</strong>.
+        Este guia foi criado para quem está a começar e quer evitar erros comuns
+        logo no início.
+      </p>
 
-  <p>
-    Aqui ficas a saber o que verificar antes de começar, quais são os erros mais comuns
-    e como evitar decisões impulsivas logo no início.
-  </p>
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 8–10 min</span>
+      </div>
+    </header>
 
-  <h2>O que verificar antes de começar</h2>
-  <p>
-    Antes de qualquer decisão, é importante perceber como funcionam as condições,
-    quais são os limites aplicáveis e que tipo de ofertas estão associadas à conta.
-  </p>
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#antes-de-jogar">O que analisar antes de jogar</a></li>
+        <li><a href="#expectativas">Expectativas realistas</a></li>
+        <li><a href="#erros-comuns">Erros mais comuns de iniciantes</a></li>
+        <li><a href="#regras-basicas">Regras básicas que deves conhecer</a></li>
+        <li><a href="#quando-nao-jogar">Quando não deves jogar</a></li>
+        <li><a href="#proximos-passos">Próximos passos no SITE02</a></li>
+      </ol>
+    </nav>
 
-  <h2>Erros comuns de iniciantes</h2>
-  <p>
-    Ativar ofertas sem ler as regras, não definir um limite de banca e tentar recuperar
-    perdas rapidamente são erros frequentes entre iniciantes.
-  </p>
+    <section id="antes-de-jogar">
+      <h2>O que analisar antes de jogar</h2>
+      <p>
+        O casino online funciona com regras fixas e variância. Antes de escolher
+        um jogo ou aceitar uma promoção, deves validar alguns pontos essenciais:
+      </p>
+      <ul>
+        <li>
+          <strong>Regras do jogo:</strong> como funciona, limites mínimos e máximos,
+          ritmo e decisões envolvidas.
+        </li>
+        <li>
+          <strong>Tipo de saldo:</strong> saldo real vs saldo de bónus (afeta levantamentos).
+        </li>
+        <li>
+          <strong>Limites pessoais:</strong> quanto estás disposto a perder numa sessão.
+        </li>
+        <li>
+          <strong>Tempo disponível:</strong> sessões longas aumentam decisões impulsivas.
+        </li>
+      </ul>
+      <p>
+        Começar sem analisar estes pontos é o principal motivo de frustração
+        entre novos jogadores.
+      </p>
+    </section>
 
-  <h2>Próximo passo</h2>
-  <p>
-    Depois de entender o básico, aprende a ler corretamente as condições das ofertas.
-  </p>
+    <section id="expectativas">
+      <h2>Expectativas realistas</h2>
+      <p>
+        Um erro frequente é entrar no casino online com expectativas erradas.
+        Jogos são desenhados para entretenimento, com resultados variáveis e
+        imprevisíveis numa sessão curta.
+      </p>
+      <ul>
+        <li>Ganhar hoje não significa ganhar amanhã.</li>
+        <li>Perder numa sessão não indica que o jogo está “manipulado”.</li>
+        <li>Não existe forma consistente de prever resultados.</li>
+      </ul>
+      <p>
+        Entender isto desde o início ajuda a evitar decisões emocionais
+        e comportamentos de risco.
+      </p>
+    </section>
+
+    <section id="erros-comuns">
+      <h2>Erros mais comuns de iniciantes</h2>
+      <ul>
+        <li>
+          <strong>Ignorar condições:</strong> aceitar bónus sem ler regras básicas.
+        </li>
+        <li>
+          <strong>Perseguir perdas:</strong> aumentar apostas para tentar recuperar.
+        </li>
+        <li>
+          <strong>Jogar sem limites:</strong> tempo e perda máxima indefinidos.
+        </li>
+        <li>
+          <strong>Mudar de jogo constantemente:</strong> sem entender nenhum.
+        </li>
+      </ul>
+      <p>
+        A maioria destes erros não tem relação com “azar”, mas sim com falta de
+        preparação e controlo.
+      </p>
+    </section>
+
+    <section id="regras-basicas">
+      <h2>Regras básicas que deves conhecer</h2>
+      <p>
+        Mesmo sem aprofundar termos técnicos, há regras mínimas que todo iniciante
+        deve compreender:
+      </p>
+      <ul>
+        <li>
+          <strong>Condições de bónus:</strong> wagering, limites e prazos
+          (ver <a href="/como-ler-condicoes">como ler condições</a>).
+        </li>
+        <li>
+          <strong>Limites de aposta:</strong> mínimos e máximos por ronda.
+        </li>
+        <li>
+          <strong>Variância:</strong> períodos de ganhos e perdas fazem parte do jogo.
+        </li>
+      </ul>
+      <p>
+        Ignorar estas regras aumenta significativamente o risco de decisões erradas.
+      </p>
+    </section>
+
+    <section id="quando-nao-jogar">
+      <h2>Quando não deves jogar</h2>
+      <p>
+        Saber quando <strong>não jogar</strong> é tão importante quanto saber jogar.
+        Evita iniciar uma sessão se:
+      </p>
+      <ul>
+        <li>estás cansado, stressado ou emocionalmente alterado</li>
+        <li>queres “recuperar” uma perda recente</li>
+        <li>não definiste tempo ou limite de perda</li>
+        <li>o jogo começa a afetar outras áreas da tua vida</li>
+      </ul>
+      <p>
+        Nestes casos, a decisão mais segura é parar e rever limites
+        (ver <a href="/jogo-consciente">jogo consciente</a>).
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos no SITE02</h2>
+      <p>
+        Depois de entender os pontos base, aprofunda estes temas:
+      </p>
+      <ul>
+        <li><a href="/como-ler-condicoes">Como ler condições e regras</a></li>
+        <li><a href="/gestao-de-limites">Gestão de limites na prática</a></li>
+        <li><a href="/riscos-e-variancia">Riscos e variância no casino online</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram partilhamos atualizações de guias e novos conteúdos educativos,
+          sem promessas e sem pressão.
+        </p>
+        <a
+          class="btn primary"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          rel="nofollow noopener"
+          target="_blank"
+        >
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
 </GuideLayout>

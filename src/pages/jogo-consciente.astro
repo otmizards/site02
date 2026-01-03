@@ -1,0 +1,154 @@
+---
+import { SITE } from "../config/site.js";
+import GuideLayout from "../layouts/GuideLayout.astro";
+
+const title =
+  "Jogo consciente no casino online: controlo, sinais e pausas | 360Wins Portugal";
+const description =
+  "Guia prático de jogo consciente no casino online: sinais precoces de risco, controlo emocional, pausas e boas práticas para decisões seguras.";
+---
+
+<GuideLayout title={title} description={description} canonicalPath="/jogo-consciente">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Autocontrolo</p>
+      <h1>Jogo consciente no casino online</h1>
+      <p class="lead">
+        Jogo consciente é manter <strong>controlo emocional e operacional</strong>.
+        Não se trata de proibir jogar, mas de reconhecer sinais,
+        aplicar pausas e proteger decisões quando a variância aumenta.
+      </p>
+
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 6–8 min</span>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#o-que-e">O que é jogo consciente</a></li>
+        <li><a href="#sinais">Sinais precoces de alerta</a></li>
+        <li><a href="#emocional">Estado emocional e decisões</a></li>
+        <li><a href="#pausas">A importância das pausas</a></li>
+        <li><a href="#rotina">Rotina simples de autocontrolo</a></li>
+        <li><a href="#quando-parar">Quando parar imediatamente</a></li>
+        <li><a href="#proximos-passos">Próximos passos no SITE02</a></li>
+      </ol>
+    </nav>
+
+    <section id="o-que-e">
+      <h2>O que é jogo consciente</h2>
+      <p>
+        Jogo consciente é a capacidade de reconhecer limites,
+        aceitar resultados variáveis e tomar decisões sem impulso.
+        O foco está no <strong>processo</strong>, não no resultado imediato.
+      </p>
+      <ul>
+        <li>definir limites antes de jogar</li>
+        <li>aceitar perdas como parte do jogo</li>
+        <li>evitar decisões sob stress</li>
+      </ul>
+    </section>
+
+    <section id="sinais">
+      <h2>Sinais precoces de alerta</h2>
+      <p>
+        Reconhecer sinais cedo evita escalada de risco.
+        Atenção se começares a:
+      </p>
+      <ul>
+        <li>aumentar apostas após perdas</li>
+        <li>jogar mais tempo do que o planeado</li>
+        <li>sentir frustração ou ansiedade durante a sessão</li>
+        <li>pensar em “recuperar” numa única sessão</li>
+      </ul>
+      <p>
+        Estes sinais indicam necessidade de pausa ou encerramento da sessão.
+      </p>
+    </section>
+
+    <section id="emocional">
+      <h2>Estado emocional e decisões</h2>
+      <p>
+        O estado emocional influencia diretamente decisões.
+        Jogar cansado, stressado ou irritado reduz autocontrolo
+        e aumenta comportamentos impulsivos.
+      </p>
+      <ul>
+        <li>evita jogar após um dia difícil</li>
+        <li>não uses o jogo como escape emocional</li>
+        <li>pausa se o foco diminui</li>
+      </ul>
+    </section>
+
+    <section id="pausas">
+      <h2>A importância das pausas</h2>
+      <p>
+        Pausas são uma ferramenta ativa de controlo.
+        Elas ajudam a quebrar ciclos emocionais e a reavaliar decisões.
+      </p>
+      <ul>
+        <li>define pausas regulares</li>
+        <li>fecha a plataforma durante a pausa</li>
+        <li>evita retomar no mesmo dia após uma sessão negativa</li>
+      </ul>
+      <p>
+        Pausas funcionam melhor quando combinadas com
+        <a href="/gestao-de-limites">gestão de limites</a>.
+      </p>
+    </section>
+
+    <section id="rotina">
+      <h2>Rotina simples de autocontrolo</h2>
+      <ol>
+        <li>define tempo e perda máxima antes de iniciar</li>
+        <li>inicia sessão com temporizador</li>
+        <li>mantém apostas consistentes</li>
+        <li>encerra ao atingir qualquer limite</li>
+      </ol>
+      <p>
+        Esta rotina reduz decisões emocionais e aumenta consistência.
+      </p>
+    </section>
+
+    <section id="quando-parar">
+      <h2>Quando parar imediatamente</h2>
+      <ul>
+        <li>quando ultrapassas um limite definido</li>
+        <li>quando sentes frustração ou raiva</li>
+        <li>quando perdes foco no que estás a fazer</li>
+        <li>quando o jogo começa a afetar outras áreas da vida</li>
+      </ul>
+      <p>
+        Parar é uma decisão ativa de controlo, não uma derrota.
+      </p>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos no SITE02</h2>
+      <ul>
+        <li><a href="/guia-iniciante">Guia para iniciantes</a></li>
+        <li><a href="/como-ler-condicoes">Como ler condições</a></li>
+        <li><a href="/gestao-de-limites">Gestão de limites</a></li>
+        <li><a href="/riscos-e-variancia">Riscos e variância</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Conteúdo educativo (opcional)</h3>
+        <p>
+          No Telegram publicamos guias e lembretes focados em decisões conscientes.
+        </p>
+        <a
+          class="btn primary"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          rel="nofollow noopener"
+          target="_blank"
+        >
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
+</GuideLayout>

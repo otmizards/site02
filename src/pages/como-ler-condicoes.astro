@@ -1,34 +1,163 @@
 ---
+import { SITE } from "../config/site.js";
 import GuideLayout from "../layouts/GuideLayout.astro";
 
-const title = "Como ler condições";
-const description = "Como interpretar exigido, prazos, jogos elegíveis e limites sem confusão.";
+const title =
+  "Como ler condições no casino online: regras que importam | 360Wins Portugal";
+const description =
+  "Guia prático para aprender a ler condições no casino online: wagering, limites, prazos e regras críticas antes de jogar ou aceitar bónus.";
 ---
 
-<GuideLayout
-  title={title}
-  description={description}
-  canonicalPath="/como-ler-condicoes"
-  checklistTitle="Condições em 60 segundos"
-  checklistItems={[
-    "Procura: exigido (wager) e como é calculado",
-    "Verifica: prazo de cumprimento",
-    "Confirma: jogos elegíveis / contribuições",
-    "Vê: limites de aposta e levantamentos",
-  ]}
->
-  <h2>Exigido (wager): o que significa</h2>
-  <p>O exigido define quantas vezes precisas de cumprir um requisito antes de levantar, dependendo da oferta.</p>
+<GuideLayout title={title} description={description} canonicalPath="/como-ler-condicoes">
+  <article class="guide-layout">
+    <header class="guide-hero">
+      <p class="kicker">Leitura prática</p>
+      <h1>Como ler condições no casino online</h1>
+      <p class="lead">
+        A maioria dos problemas no casino online não acontece por azar,
+        mas por <strong>não ler condições</strong>.
+        Este guia mostra o que realmente importa analisar e o que pode ser ignorado.
+      </p>
 
-  <h2>Prazos e limites</h2>
-  <ul>
-    <li>Prazos: quando expira o bónus/rodadas.</li>
-    <li>Limites: aposta máxima, ganho máximo, limites de levantamento.</li>
-  </ul>
+      <div class="guide-meta">
+        <span>Conteúdo educativo (Portugal)</span>
+        <span>Leitura: 8–10 min</span>
+      </div>
+    </header>
 
-  <h2>Jogos elegíveis</h2>
-  <p>Nem todos os jogos contam da mesma forma. Confirma sempre a lista/percentagens.</p>
+    <nav class="toc" aria-label="Índice do guia">
+      <h2>Índice</h2>
+      <ol>
+        <li><a href="#porque-existem">Porque existem condições</a></li>
+        <li><a href="#onde-estao">Onde estão as regras importantes</a></li>
+        <li><a href="#regras-criticas">Regras críticas que deves ler</a></li>
+        <li><a href="#o-que-ignorar">O que normalmente podes ignorar</a></li>
+        <li><a href="#erros-frequentes">Erros frequentes ao ler condições</a></li>
+        <li><a href="#antes-de-aceitar">Checklist antes de aceitar</a></li>
+        <li><a href="#proximos-passos">Próximos passos no SITE02</a></li>
+      </ol>
+    </nav>
 
-  <h2>Próximo passo</h2>
-  <p>Segue para <a href="/gestao-de-limites">Gestão de limites</a> para manter decisões consistentes.</p>
+    <section id="porque-existem">
+      <h2>Porque existem condições</h2>
+      <p>
+        As condições existem para definir <strong>limites, responsabilidades e riscos</strong>.
+        Não servem para “enganar”, mas para esclarecer como funcionam promoções,
+        levantamentos e uso da plataforma.
+      </p>
+      <p>
+        Ignorar condições não elimina as regras — apenas aumenta a probabilidade
+        de seres surpreendido mais tarde.
+      </p>
+    </section>
+
+    <section id="onde-estao">
+      <h2>Onde estão as regras importantes</h2>
+      <p>
+        Nem todas as páginas de termos são relevantes para uma sessão normal.
+        Foca-te em:
+      </p>
+      <ul>
+        <li>Termos específicos de bónus ou promoção</li>
+        <li>Regras de levantamento (withdrawal)</li>
+        <li>Limites de aposta com bónus ativo</li>
+        <li>Prazos e expiração</li>
+      </ul>
+      <p>
+        Textos longos e genéricos sobre privacidade ou cookies raramente
+        afetam o uso diário do jogo.
+      </p>
+    </section>
+
+    <section id="regras-criticas">
+      <h2>Regras críticas que deves ler</h2>
+
+      <h3>Wagering (requisito de aposta)</h3>
+      <p>
+        Define quantas vezes tens de apostar um valor antes de poderes levantar.
+        Wagering elevado aumenta tempo e risco.
+      </p>
+
+      <h3>Limite de aposta</h3>
+      <p>
+        Muitas promoções impõem um valor máximo por ronda enquanto o bónus está ativo.
+        Ultrapassar esse limite pode anular ganhos.
+      </p>
+
+      <h3>Prazos</h3>
+      <p>
+        Bónus e ganhos promocionais podem expirar. Prazos curtos aumentam decisões impulsivas.
+      </p>
+
+      <h3>Limite de ganhos (cap)</h3>
+      <p>
+        Algumas ofertas limitam o valor máximo que pode ser convertido ou levantado,
+        mesmo após cumprir regras.
+      </p>
+    </section>
+
+    <section id="o-que-ignorar">
+      <h2>O que normalmente podes ignorar</h2>
+      <p>
+        Para uma leitura eficiente, alguns pontos raramente impactam a maioria dos jogadores:
+      </p>
+      <ul>
+        <li>descrições técnicas extensas do software</li>
+        <li>histórico legal da empresa</li>
+        <li>regras aplicáveis apenas a países fora de Portugal</li>
+      </ul>
+      <p>
+        Isto não substitui a leitura completa, mas ajuda a priorizar o que realmente importa.
+      </p>
+    </section>
+
+    <section id="erros-frequentes">
+      <h2>Erros frequentes ao ler condições</h2>
+      <ul>
+        <li>Assumir que “bónus grátis” não tem regras</li>
+        <li>Ler apenas o valor do bónus e ignorar requisitos</li>
+        <li>Não validar prazos e limites de aposta</li>
+        <li>Aceitar promoções por impulso</li>
+      </ul>
+      <p>
+        Estes erros criam frustração e sensação de injustiça,
+        quando na realidade as regras estavam descritas.
+      </p>
+    </section>
+
+    <section id="antes-de-aceitar">
+      <h2>Checklist antes de aceitar</h2>
+      <ul>
+        <li>Sei qual é o wagering e sobre o que se aplica</li>
+        <li>Conheço o limite de aposta por ronda</li>
+        <li>Validei prazos de expiração</li>
+        <li>Entendi se existe limite de ganhos</li>
+        <li>Tenho limites definidos (ver <a href="/gestao-de-limites">gestão de limites</a>)</li>
+      </ul>
+    </section>
+
+    <section id="proximos-passos">
+      <h2>Próximos passos no SITE02</h2>
+      <ul>
+        <li><a href="/guia-iniciante">Guia para iniciantes</a></li>
+        <li><a href="/gestao-de-limites">Gestão de limites</a></li>
+        <li><a href="/riscos-e-variancia">Riscos e variância</a></li>
+      </ul>
+
+      <div class="cta-box">
+        <h3>Atualizações educativas (opcional)</h3>
+        <p>
+          No Telegram publicamos novos guias e avisos quando regras e condições mudam.
+        </p>
+        <a
+          class="btn primary"
+          href={SITE.telegram ?? SITE.telegramUrl ?? "#"}
+          rel="nofollow noopener"
+          target="_blank"
+        >
+          Entrar no Telegram
+        </a>
+      </div>
+    </section>
+  </article>
 </GuideLayout>

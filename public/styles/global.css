@@ -674,11 +674,4 @@ a{ color: inherit; text-decoration: none; }
 .guide-layout a:hover {
   opacity: 0.9;
 }
-/* TESTE: força fundo vermelho no site inteiro */
-html, body {
-  background: #ff0000 !important;
-}
 
-body, main, header, footer, section, article, .guide-layout, .guide-hero, .toc, .cta-box {
-  background: #ff0000 !important;
-}

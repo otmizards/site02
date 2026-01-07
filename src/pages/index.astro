@@ -8,7 +8,8 @@ const description =
   SITE.siteDescription ??
   "Guias práticos sobre casino online em Portugal: como ler condições, gerir limites, entender riscos e jogar com controlo.";
 
-const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl;
+const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl ?? "#";
+
 ---
 
 <BaseLayout title={title} description={description} canonicalPath="/">
@@ -25,7 +26,8 @@ const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl;
           class="btn btn-telegram btn-small"
           href={TELEGRAM_URL}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
+
         >
           <span class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
@@ -101,7 +103,8 @@ const TELEGRAM_URL = SITE.telegram ?? SITE.telegramUrl;
           class="btn btn-telegram btn-cta"
           href={TELEGRAM_URL}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="nofollow noopener noreferrer"
+
         >
           <span class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none">
